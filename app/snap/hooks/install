@@ -3,8 +3,14 @@
 TAG="$SNAP_NAME.hook.install"
 
 logger --tag=$TAG "Setting default configuration"
+
+# autostart option is to enable services (disabled by default in snapcraft.yaml).
+# Normally this would be a boolean but I'm using an enum here for the sake of testing to control which hook starts the services
+# This option is meant to be set from a gadget. Setting it here is for testing purposes only.
 # snapctl set autostart=configure-hook
 snapctl set autostart=default-configure-hook
+
+# debug option is debugging purposes to trace this configuration and check if it gets overriden by the value set in gadget
 snapctl set debug="install hook"
 
 logger --tag=$TAG "done!"
