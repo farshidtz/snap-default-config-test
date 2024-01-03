@@ -1,0 +1,155 @@
+Mount snap "default-config-test-farshidtz" (5)                                 \[   18.937275] systemd[1]: Mounting Mount unit for default-config-test-farshidtz, revision 5...
+         Mounting Mount unit for de…-test-farshidtz, revision 5...
+Mount snap "default-config-test-farshidtz" (5)                                 |[   18.951846] systemd[1]: Mounted Mount unit for default-config-test-farshidtz, revision 5.
+[  OK  ] Mounted Mount unit for def…ig-test-farshidtz, revision 5.
+Setup snap "default-config-test-farshidtz" (5) security profiles               |[   19.980115] systemd[1]: Reloading.
+Run install hook of "default-config-test-farshidtz" snap if present            /[   20.561905] systemd[1]: Started snap.default-config-test-farshidtz.hook.install-1470eb1e-08f0-4566-aa32-0790cd36f2bf.scope.
+[  OK  ] Started snap.default-confi…-4566-aa32-0790cd36f2bf.scope.
+[   20.591772] systemd[1]: tmp-snap.rootfs_1evi4h.mount: Deactivated successfully.
+Run install hook of "default-config-test-farshidtz" snap if present            \[   20.797471] default-config-test-farshidtz.hook.install[2376]: Setting default configuration
+Run install hook of "default-config-test-farshidtz" snap if present            |[   20.941631] default-config-test-farshidtz.hook.install[2385]: done!
+[   20.943104] systemd[1]: snap.default-config-test-farshidtz.hook.install-1470eb1e-08f0-4566-aa32-0790cd36f2bf.scope: Deactivated successfully.
+Run default-configure hook of "default-config-test-farshidtz" snap if present  /[   21.036552] systemd[1]: Started snap.default-config-test-farshidtz.hook.default-configure-8aeb47ef-da60-4bf8-8f26-c204f691c4bc.scope.
+[  OK  ] Started snap.default-confi…-4bf8-8f26-c204f691c4bc.scope.
+[   21.048494] default-config-test-farshidtz.hook.default-configure[2405]: debug: gadget
+[   21.052421] default-config-test-farshidtz.hook.default-configure[2410]: autostart: default-configure-hook
+[   21.058054] default-config-test-farshidtz.hook.default-configure[2415]: Starting and enabling services.
+Run default-configure hook of "default-config-test-farshidtz" snap if present  -[   21.282968] systemd[1]: Reloading.
+Run default-configure hook of "default-config-test-farshidtz" snap if present  /[   21.510255] systemd[1]: Starting Service for snap application default-config-test-farshidtz.setup...
+         Starting Service for snap …config-test-farshidtz.setup...
+[   21.527632] default-config-test-farshidtz.setup[2548]: ++ snapctl get debug
+[   21.531461] default-config-test-farshidtz.setup[2533]: + echo 'debug: install hook'
+[   21.532382] default-config-test-farshidtz.setup[2533]: debug: install hook
+[   21.533338] default-config-test-farshidtz.setup[2552]: ++ snapctl get autostart
+[   21.539506] default-config-test-farshidtz.setup[2533]: + echo 'autostart: default-configure-hook'
+[   21.540679] default-config-test-farshidtz.setup[2533]: autostart: default-configure-hook
+[   21.541507] default-config-test-farshidtz.setup[2533]: + echo 'doing some one-time setup work...'
+[   21.542978] default-config-test-farshidtz.setup[2533]: doing some one-time setup work...
+[   21.543755] default-config-test-farshidtz.setup[2533]: + sleep 3
+Run default-configure hook of "default-config-test-farshidtz" snap if present  \[   24.543545] default-config-test-farshidtz.setup[2533]: + echo 'done!'
+[   24.544973] default-config-test-farshidtz.setup[2533]: done!
+[   24.545781] systemd[1]: snap.default-config-test-farshidtz.setup.service: Deactivated successfully.
+[   24.546860] systemd[1]: Finished Service for snap application default-config-test-farshidtz.setup.
+[  OK  ] Finished Service for snap …t-config-test-farshidtz.setup.
+[  OK  ] Started Service for snap a…-config-test-farshidtz.my-app.
+[   24.554990] systemd[1]: Started Service for snap application default-config-test-farshidtz.my-app.
+[   24.613441] default-config-test-farshidtz.hook.default-configure[2577]: done!
+[   24.614760] default-config-test-farshidtz.my-app[2558]: debug: install hook
+[   24.618103] systemd[1]: snap.default-config-test-farshidtz.hook.default-configure-8aeb47ef-da60-4bf8-8f26-c204f691c4bc.scope: Deactivated successfully.
+[   24.667908] default-config-test-farshidtz.my-app[2558]: autostart: default-configure-hook
+[   24.669002] default-config-test-farshidtz.my-app[2558]: My app: 1
+Start snap "default-config-test-farshidtz" (5) services                        |[   24.725556] systemd[1]: Reloading.
+Start snap "default-config-test-farshidtz" (5) services                        -[   24.957334] systemd[1]: Starting Service for snap application default-config-test-farshidtz.setup...
+         Starting Service for snap …config-test-farshidtz.setup...
+[   24.974682] default-config-test-farshidtz.setup[2710]: ++ snapctl get debug
+[   24.978246] default-config-test-farshidtz.setup[2695]: + echo 'debug: gadget'
+[   24.979175] default-config-test-farshidtz.setup[2695]: debug: gadget
+[   24.980322] default-config-test-farshidtz.setup[2714]: ++ snapctl get autostart
+[   24.984584] default-config-test-farshidtz.setup[2695]: + echo 'autostart: default-configure-hook'
+[   24.985738] default-config-test-farshidtz.setup[2695]: autostart: default-configure-hook
+[   24.987320] default-config-test-farshidtz.setup[2695]: + echo 'doing some one-time setup work...'
+[   24.988446] default-config-test-farshidtz.setup[2695]: doing some one-time setup work...
+[   24.989447] default-config-test-farshidtz.setup[2695]: + sleep 3
+Start snap "default-config-test-farshidtz" (5) services                        /[   25.669309] default-config-test-farshidtz.my-app[2558]: My app: 2
+Start snap "default-config-test-farshidtz" (5) services                        \[   26.670267] default-config-test-farshidtz.my-app[2558]: My app: 3
+Start snap "default-config-test-farshidtz" (5) services                        /[   27.671284] default-config-test-farshidtz.my-app[2558]: My app: 4
+Start snap "default-config-test-farshidtz" (5) services                        |[   27.987917] default-config-test-farshidtz.setup[2695]: + echo 'done!'
+[   27.988741] default-config-test-farshidtz.setup[2695]: done!
+[  OK  ] Finished Service for snap …t-config-test-farshidtz.setup.
+[   27.993499] systemd[1]: snap.default-config-test-farshidtz.setup.service: Deactivated successfully.
+[   27.994504] systemd[1]: Finished Service for snap application default-config-test-farshidtz.setup.
+Run configure hook of "default-config-test-farshidtz" snap if present          /[   28.077224] systemd[1]: Started snap.default-config-test-farshidtz.hook.configure-cbf5f160-2c0e-454e-9bc1-5a9d6751a618.scope.
+[  OK  ] Started snap.default-confi…-454e-9bc1-5a9d6751a618.scope.
+[   28.089501] default-config-test-farshidtz.hook.configure[2742]: debug: gadget
+[   28.093600] default-config-test-farshidtz.hook.configure[2747]: autostart: default-configure-hook
+[   28.097973] default-config-test-farshidtz.hook.configure[2752]: done!
+[   28.099532] systemd[1]: snap.default-config-test-farshidtz.hook.configure-cbf5f160-2c0e-454e-9bc1-5a9d6751a618.scope: Deactivated successfully.
+[   28.269641] dbus-daemon[802]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.13' (uid=0 pid=1540 comm="/snap/snapd/20290/usr/lib/snapd/snapd " label="unconfined")
+         Starting Time & Date Service...
+[   28.274707] systemd[1]: Starting Time & Date Service...
+[   28.338593] dbus-daemon[802]: [system] Successfully activated service 'org.freedesktop.timedate1'
+[  OK  ] Started Time & Date Service.
+[   28.340434] systemd[1]: Started Time & Date Service.
+[  OK  ] Finished Start the snapd services from the snapd snap.
+
+[  OK  ] Started Ubuntu Core Firstboot Configuration tty1.
+[   28.446006] run-snapd-from-snap[804]: + exit 0
+[   28.446575] systemd[1]: Finished Start the snapd services from the snapd snap.
+[   28.447417] systemd[1]: Started Ubuntu Core Firstboot Configuration tty1.
+[   28.672330] default-config-test-farshidtz.my-app[2558]: My app: 5
+[   29.326016] snapd[1540]: devicemgr.go:1242: System initialized, cloud-init reported to be in disabled state, disabled permanently
+[   29.673035] default-config-test-farshidtz.my-app[2558]: My app: 6
+[  OK  ] Finished Wait until snapd is fully seeded.
+         Starting Terminate Plymouth Boot Screen...
+[   29.864386] systemd[1]: Finished Wait until snapd is fully seeded.
+[   29.865935] systemd[1]: Starting Terminate Plymouth Boot Screen...
+[   29.868135] systemd[1]: Starting Auto import assertions from a specific block device...
+         Starting Auto import asser…rom a specific block device...
+[   29.872344] systemd[1]: Starting Auto import assertions from a specific block device...
+         Starting Auto import asser…rom a specific block device...
+[   29.888681] systemd[1]: Starting Auto import assertions from a specific block device...
+         Starting Auto import asser…rom a specific block device...
+[   29.896286] systemd[1]: Starting Auto import assertions from a specific block device...
+         Starting Auto import asser…rom a specific block device...
+[   29.912220] systemd[1]: Starting Auto import assertions from a specific block device...
+         Starting Auto import asser…rom a specific block device...
+[   29.929567] systemd[1]: Starting Auto import assertions from a specific block device...
+         Starting Auto import asser…rom a specific block device...
+[   29.940400] systemd[1]: Starting Auto import assertions from a specific block device...
+         Starting Auto import asser…rom a specific block device...
+[   29.949530] snap[2764]: cmd_auto_import.go:206: error: cannot mount /dev/vda: mount: /tmp/snapd-auto-import-mount-3389306275: /dev/vda already mounted or mount point busy.
+[   29.960902] systemd[1]: Starting Auto import assertions from block devices...
+         Starting Auto import assertions from block devices...
+[   29.981199] snap[2768]: cmd_auto_import.go:206: error: cannot mount /dev/vda2: mount: /tmp/snapd-auto-import-mount-3420681815: /dev/vda2 already mounted on /run/mnt/ubuntu-seed.
+[   29.982764] snap[2767]: cmd_auto_import.go:206: error: cannot mount /dev/vda1: mount: /tmp/snapd-auto-import-mount-1051004837: wrong fs type, bad option, bad superblock on /dev/vda1, missing codepage or helper program, or other error.
+[   29.988452] systemd[1]: snapd.autoimport-device@vda.service: Deactivated successfully.
+[  OK  ] Finished Auto import asser… from a specific block device.
+[   29.999159] snap[2775]: cmd_auto_import.go:206: error: cannot mount /dev/vda4: mount: /tmp/snapd-auto-import-mount-1439189279: /dev/vda4 already mounted on /run/mnt/ubuntu-save.
+[   30.003303] systemd[1]: Finished Auto import assertions from a specific block device.
+[  OK  ] Finished Auto import asser… from a specific block device.
+[  OK  ] Finished Auto import asser… from a specific block device.
+[   30.009329] snap[2773]: cmd_auto_import.go:206: error: cannot mount /dev/vda3: mount: /tmp/snapd-auto-import-mount-2308542367: /dev/vda3 already mounted on /run/mnt/ubuntu-boot.
+[   30.011141] systemd[1]: snapd.autoimport-device@vda1.service: Deactivated successfully.
+[   30.011978] systemd[1]: Finished Auto import assertions from a specific block device.
+[  OK  ] Finished Auto import asser… from a specific block device.
+[  OK  ] Finished Auto import asser… from a specific block device.
+[  OK  ] Finished Auto import asser… from a specific block device.
+[   30.024204] systemd[1]: snapd.autoimport-device@vda2.service: Deactivated successfully.
+[   30.025210] snap[2784]: cmd_auto_import.go:206: error: cannot mount /dev/vda5: mount: /tmp/snapd-auto-import-mount-2660936966: /dev/vda5 already mounted on /writable.
+[   30.027000] snap[2763]: cmd_auto_import.go:206: error: cannot mount /dev/sr0: mount: /tmp/snapd-auto-import-mount-684647816: no medium found on /dev/sr0.
+[  OK  ] Finished Auto import asser… from a specific block device.
+[  OK  ] Finished Terminate Plymouth Boot Screen.
+[   30.036222] systemd[1]: Finished Auto import assertions from a specific block device.
+[   30.037593] systemd[1]: snapd.autoimport-device@sr0.service: Deactivated successfully.
+[   30.038363] systemd[1]: Finished Auto import assertions from a specific block device.
+[   30.039111] systemd[1]: snapd.autoimport-device@vda3.service: Deactivated successfully.
+[   30.039874] systemd[1]: Finished Auto import assertions from a specific block device.
+[   30.044377] systemd[1]: snapd.autoimport-device@vda4.service: Deactivated successfully.
+[   30.045149] systemd[1]: Finished Auto import assertions from a specific block device.
+[   30.045899] systemd[1]: snapd.autoimport-device@vda5.service: Deactivated successfully.
+[   30.046690] systemd[1]: Finished Auto import assertions from a specific block device.
+[   30.047438] systemd[1]: Finished Terminate Plymouth Boot Screen.
+[   30.133063] snap[2791]: cmd_auto_import.go:206: error: cannot mount /dev/sr0: mount: /tmp/snapd-auto-import-mount-1911017992: no medium found on /dev/sr0.
+[  OK  ] Finished Auto import assertions from block devices.
+[  OK  ] Reached target Multi-User System.
+[   30.137013] systemd[1]: snapd.autoimport.service: Deactivated successfully.
+[   30.137699] systemd[1]: Finished Auto import assertions from block devices.
+[   30.138656] systemd[1]: Reached target Multi-User System.
+[  OK  ] Reached target Graphical Interface.
+         Starting Record Runlevel Change in UTMP...
+[   30.144995] systemd[1]: Reached target Graphical Interface.
+[   30.145571] systemd[1]: Starting Record Runlevel Change in UTMP...
+[   30.149677] systemd[1]: systemd-update-utmp-runlevel.service: Deactivated successfully.
+[  OK  ] Finished Record Runlevel Change in UTMP.
+[   30.151260] systemd[1]: Finished Record Runlevel Change in UTMP.
+[   30.675586] default-config-test-farshidtz.my-app[2558]: My app: 7
+[   30.677667] systemd[1]: Startup finished in 556ms (kernel) + 3.090s (initrd) + 27.029s (userspace) = 30.676s.
+[   30.679633] systemd[1]: Stopping Getty on tty1...
+[   30.688472] systemd[1]: getty@tty1.service: Deactivated successfully.
+[   30.689543] systemd[1]: Stopped Getty on tty1.
+[   31.101944] snapd[1540]: taskrunner.go:299: [change 3 "Request device serial" task] failed: cannot deliver device serial request: Cannot process serial request for device with brand "SZ4OfFv8DVM9om64iYrgojDLgbzI0eiL" and model "ubuntu-core-22-amd64"
+[   31.676611] default-config-test-farshidtz.my-app[2558]: My app: 8
+[   32.677600] default-config-test-farshidtz.my-app[2558]: My app: 9
+[   33.678700] default-config-test-farshidtz.my-app[2558]: My app: 10
+[   34.679505] default-config-test-farshidtz.my-app[2558]: done!
+[   34.680890] systemd[1]: snap.default-config-test-farshidtz.my-app.service: Deactivated successfully.

@@ -1,0 +1,14 @@
+#!/bin/bash -e
+
+TAG="$SNAP_NAME.hook.default-configure"
+
+logger --tag=$TAG "debug: $(snapctl get debug)"
+logger --tag=$TAG "autostart: $(snapctl get autostart)"
+
+if [ "$(snapctl get autostart)" == "default-configure-hook" ]; then
+    logger --tag=$TAG "Starting and enabling services."
+    snapctl start --enable "$SNAP_NAME"
+fi
+
+echo "hello"
+logger --tag=$TAG "done!"

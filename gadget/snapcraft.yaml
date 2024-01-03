@@ -1,0 +1,23 @@
+name: my-gadget
+type: gadget
+base: core22
+version: "0.1"
+summary: My custom gadget
+description: Custom gadget to set default app config
+
+grade: stable
+confinement: strict
+
+architectures:
+  - build-on: [amd64]
+
+parts:
+  gadget:
+    plugin: nil
+    stage-snaps:
+      - pc/22
+
+  # To add debug logging on QEMU 
+  kernel-options: 
+    plugin: dump
+    source: kernel-options/

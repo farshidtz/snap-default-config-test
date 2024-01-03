@@ -1,0 +1,37 @@
+2024-01-03T15:38:37+0100 systemd[1]: Started snap.default-config-test-farshidtz.hook.install-04b745d6-7126-4917-99b8-a8f09b58f981.scope.
+2024-01-03T15:38:37+0100 default-config-test-farshidtz.hook.install[36101]: Setting default configuration
+2024-01-03T15:38:37+0100 default-config-test-farshidtz.hook.install[36112]: done!
+2024-01-03T15:38:37+0100 systemd[1]: snap.default-config-test-farshidtz.hook.install-04b745d6-7126-4917-99b8-a8f09b58f981.scope: Deactivated successfully.
+2024-01-03T15:38:37+0100 systemd[1]: Started snap.default-config-test-farshidtz.hook.default-configure-e90b02bc-b360-4cfd-84c9-ffb3a34115cb.scope.
+2024-01-03T15:38:37+0100 default-config-test-farshidtz.hook.default-configure[36139]: debug: install hook
+2024-01-03T15:38:37+0100 default-config-test-farshidtz.hook.default-configure[36145]: autostart: configure-hook
+2024-01-03T15:38:37+0100 default-config-test-farshidtz.hook.default-configure[36151]: done!
+2024-01-03T15:38:37+0100 systemd[1]: snap.default-config-test-farshidtz.hook.default-configure-e90b02bc-b360-4cfd-84c9-ffb3a34115cb.scope: Deactivated successfully.
+2024-01-03T15:38:37+0100 systemd[1]: Started snap.default-config-test-farshidtz.hook.configure-e1b71058-910f-40f5-ab62-c8f255dd3cc4.scope.
+2024-01-03T15:38:37+0100 default-config-test-farshidtz.hook.configure[36178]: debug: install hook
+2024-01-03T15:38:37+0100 default-config-test-farshidtz.hook.configure[36184]: autostart: configure-hook
+2024-01-03T15:38:37+0100 default-config-test-farshidtz.hook.configure[36199]: Starting and enabling services.
+2024-01-03T15:38:37+0100 default-config-test-farshidtz.hook.configure[36205]: done!
+2024-01-03T15:38:37+0100 systemd[1]: snap.default-config-test-farshidtz.hook.configure-e1b71058-910f-40f5-ab62-c8f255dd3cc4.scope: Deactivated successfully.
+2024-01-03T15:38:38+0100 systemd[1]: Starting snap.default-config-test-farshidtz.setup.service - Service for snap application default-config-test-farshidtz.setup...
+2024-01-03T15:38:38+0100 default-config-test-farshidtz.setup[36246]: debug: install hook
+2024-01-03T15:38:38+0100 default-config-test-farshidtz.setup[36246]: autostart: configure-hook
+2024-01-03T15:38:38+0100 default-config-test-farshidtz.setup[36246]: doing some one-time setup work...
+2024-01-03T15:38:41+0100 default-config-test-farshidtz.setup[36246]: done!
+2024-01-03T15:38:41+0100 systemd[1]: snap.default-config-test-farshidtz.setup.service: Deactivated successfully.
+2024-01-03T15:38:41+0100 systemd[1]: Finished snap.default-config-test-farshidtz.setup.service - Service for snap application default-config-test-farshidtz.setup.
+2024-01-03T15:38:41+0100 systemd[1]: Started snap.default-config-test-farshidtz.my-app.service - Service for snap application default-config-test-farshidtz.my-app.
+2024-01-03T15:38:41+0100 default-config-test-farshidtz.my-app[36283]: debug: install hook
+2024-01-03T15:38:41+0100 default-config-test-farshidtz.my-app[36283]: autostart: configure-hook
+2024-01-03T15:38:41+0100 default-config-test-farshidtz.my-app[36283]: My app: 1
+2024-01-03T15:38:42+0100 default-config-test-farshidtz.my-app[36283]: My app: 2
+2024-01-03T15:38:43+0100 default-config-test-farshidtz.my-app[36283]: My app: 3
+2024-01-03T15:38:44+0100 default-config-test-farshidtz.my-app[36283]: My app: 4
+2024-01-03T15:38:45+0100 default-config-test-farshidtz.my-app[36283]: My app: 5
+2024-01-03T15:38:46+0100 default-config-test-farshidtz.my-app[36283]: My app: 6
+2024-01-03T15:38:47+0100 default-config-test-farshidtz.my-app[36283]: My app: 7
+2024-01-03T15:38:48+0100 default-config-test-farshidtz.my-app[36283]: My app: 8
+2024-01-03T15:38:49+0100 default-config-test-farshidtz.my-app[36283]: My app: 9
+2024-01-03T15:38:50+0100 default-config-test-farshidtz.my-app[36283]: My app: 10
+2024-01-03T15:38:51+0100 default-config-test-farshidtz.my-app[36283]: done!
+2024-01-03T15:38:51+0100 systemd[1]: snap.default-config-test-farshidtz.my-app.service: Deactivated successfully.

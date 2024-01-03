@@ -1,0 +1,40 @@
+type: model
+series: '16'
+# authority-id and brand-id must be set to your developer-id
+authority-id: SZ4OfFv8DVM9om64iYrgojDLgbzI0eiL
+brand-id: SZ4OfFv8DVM9om64iYrgojDLgbzI0eiL
+model: ubuntu-core-22-amd64
+architecture: amd64
+# timestamp should be within your signature's validity period
+timestamp: '2023-12-14T13:00:00Z'
+base: core22
+grade: dangerous
+snaps:
+  - # Custom gadget snap
+    # Built locally and pass to the image builder
+    name: my-gadget
+    type: gadget
+    # default-channel:
+    # id:
+
+  - name: pc-kernel
+    type: kernel
+    default-channel: 22/stable
+    id: pYVQrBcKmBa0mZ4CCN7ExT6jH8rY1hza
+
+  - name: snapd
+    type: snapd
+    default-channel: latest/stable
+    id: PMrrV4ml8uWuEUDBT8dSGnKUYbevVhc4
+
+  - name: core22
+    type: base
+    default-channel: latest/stable
+    id: amcUKQILKXHHTlmSa7NMdnXSx02dNeeT
+
+  # App
+  # This is uploaded to store because we need the ID to pass defaults to it from the gadget
+  - name: default-config-test-farshidtz
+    type: app
+    default-channel: latest/edge
+    id: oHkMrlWi6vOj7bjH61Z8mnkb15mXjD1W

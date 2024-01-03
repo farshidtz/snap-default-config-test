@@ -1,0 +1,34 @@
+name: default-config-test-farshidtz
+summary: Snap to test default-configure hook
+description: N/A
+version: "0.1"
+
+grade: devel
+confinement: strict
+
+base: core22
+
+architectures:
+  - build-on: [amd64]
+
+apps:
+  setup:
+    command: bin/setup.sh
+    daemon: oneshot
+    install-mode: disable
+
+  my-app:
+    after:
+      - setup
+    command: bin/my-app.sh
+    daemon: simple
+    install-mode: disable
+
+
+parts:
+  bin:
+    plugin: nil
+    source: snap/local/bin
+    override-build: |
+      mkdir -p $CRAFT_PART_INSTALL/bin/
+      cp -v *.sh $CRAFT_PART_INSTALL/bin/

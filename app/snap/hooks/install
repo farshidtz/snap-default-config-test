@@ -1,0 +1,10 @@
+#!/bin/bash -e
+
+TAG="$SNAP_NAME.hook.install"
+
+logger --tag=$TAG "Setting default configuration"
+# snapctl set autostart=configure-hook
+snapctl set autostart=default-configure-hook
+snapctl set debug="install hook"
+
+logger --tag=$TAG "done!"
